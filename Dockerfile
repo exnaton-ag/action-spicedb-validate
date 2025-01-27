@@ -1,4 +1,4 @@
-FROM public.ecr.aws/authzed/zed:latest as base
+FROM 458972843250.dkr.ecr.eu-central-1.amazonaws.com/docker-hub-public/authzed/spicedb as base
 
 FROM ubuntu:22.04
 COPY --from=base /usr/local/bin/zed /zed
