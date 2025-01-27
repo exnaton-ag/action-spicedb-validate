@@ -1,4 +1,4 @@
-FROM quay.io/authzed/zed:latest as base
+FROM public.ecr.aws/authzed/zed:latest as base
 
 FROM ubuntu:22.04
 COPY --from=base /usr/local/bin/zed /zed
